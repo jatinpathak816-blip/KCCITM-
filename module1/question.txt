@@ -1,0 +1,51 @@
+Week 1 Module – Programming Practice ch
+
+Topics to be Covered: 
+1. Star Patterns 
+ 
+1. Square          2. Hollow Square   3. Triangle        4. Inverted Triangle 
+ 
+*****              *****                  *                    ***** 
+*****              *       *                  **                    **** 
+*****              *       *                  ***                    *** 
+*****              *       *                  ****                    ** 
+*****              *****                  *****                   * 
+ 
+ 
+5. Pyramid         6. Diamond         7. Half Diamond     8. Half Diamond Inverted 
+ 
+        *                           *               *                          ***** 
+      ***                       ***              **                          **** 
+    *****                  *****             ***                          *** 
+  *******              *******            ****                          ** 
+*********         *********          *****                          * 
+                         *******           **** 
+                            *****             *** 
+                              ***              ** 
+                                 *                * 
+ 
+ 
+ 
+ 
+ 
+2. Number Patterns 
+1. Square         2. Incrementing    3. Right Triangle   4. Inverted Diamond 
+ 
+1 1 1 1 1           1 2 3 4 5              1                          3 3 3 3 3 
+1 1 1 1 1           1 2 3 4 5              1 2                          4 4 4 4 
+1 1 1 1 1           1 2 3 4 5              1 2 3                          5 5 5 
+1 1 1 1 1           1 2 3 4 5              1 2 3 4                       6 6 
+1 1 1 1 1           1 2 3 4 5              1 2 3 4 5                     7 
+ 
+ 
+5. Sandwich Pattern       6. Incrementing Diamond Pattern 
+ 
+3 3 3 3 3                            3 
+  4 4 4                              4 4 
+     5                                5 5 5 
+  4 4 4                            6 6 6 6 
+3 3 3 3 3                       7 7 7 7 7 
+                                  6 6 6 6 
+                                    5 5 5 
+                                      4 4 
+                                        3
