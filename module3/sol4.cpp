@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Partition function for descending order
+
 int partition(int arr[], int low, int high)
 {
     int pivot = arr[high];
@@ -9,7 +9,8 @@ int partition(int arr[], int low, int high)
 
     for (int j = low; j < high; j++)
     {
-        if (arr[j] > pivot)   // Descending order
+        if (arr[j] > pivot)   
+        
         {
             i++;
             swap(arr[i], arr[j]);
@@ -20,7 +21,7 @@ int partition(int arr[], int low, int high)
     return i + 1;
 }
 
-// Quick Sort
+
 void quickSort(int arr[], int low, int high)
 {
     if (low < high)
@@ -47,7 +48,7 @@ int main()
         cin >> arr[i];
     }
 
-    // Calculate overall average
+    
     double total = 0;
     for (int i = 0; i < n; i++)
     {
@@ -55,17 +56,17 @@ int main()
     }
     double overallAverage = total / n;
 
-    // Quick Sort
+   
     quickSort(arr, 0, n - 1);
 
-    // Display sorted array
+   
     cout << "\nTrade values in Descending Order:\n";
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
     }
 
-    // Top 5 values
+   
     int limit = (n < 5) ? n : 5;
 
     cout << "\n\nTop " << limit << " Highest Trade Values:\n";
@@ -77,11 +78,10 @@ int main()
         topSum += arr[i];
     }
 
-    // Average of Top 5
     cout << "\nAverage of Top " << limit << " Values = "
          << topSum / limit << endl;
 
-    // Count values greater than overall average
+    
     int count = 0;
     for (int i = 0; i < n; i++)
     {

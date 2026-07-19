@@ -1,0 +1,186 @@
+Question 1 (Easy): 
+A university's Training and Placement Cell have successfully completed its annual placement drive. 
+The placement department has collected the salary packages (in LPA) offered to students by different 
+companies. However, the records were entered in the order they were received, resulting in an 
+unsorted list of package values. 
+Before publishing the placement statistics report, the department wants all package values arranged 
+in ascending order. Since the university plans to handle placement data for thousands of students in 
+the coming years, they want a sorting technique that is efficient for large datasets. 
+Your task is to implement the Merge Sort algorithm to sort the package values in increasing order. 
+Merge Sort follows a divide-and-conquer approach by dividing the dataset into smaller subarrays, 
+sorting them recursively, and then merging them back together. 
+The final sorted list will help the university identify minimum, median, and maximum packages while 
+generating analytical reports. 
+Input 
+• First line contains an integer N, representing the number of placed students.  
+• Second line contains N space-separated integers, representing package values (multiplied by 
+100 to avoid decimals).  
+Output 
+Print the package values in ascending order. 
+Constraints 
+• 1 ≤ N ≤ 100000  
+• 100 ≤ Package ≤ 10000  
+Example 
+Input: 
+6 
+450 1200 800 650 300 1500 
+Output: 
+300 450 650 800 1200 1500 
+Question 2 (Medium):  
+A large e-commerce company tracks the time taken (in minutes) to process customer orders before 
+shipment. Due to varying warehouse workloads, processing times differ significantly from one order 
+to another. 
+The analytics team wants to study operational efficiency by sorting all processing times and 
+generating statistical information. Since millions of orders are processed every month, the company 
+requires an efficient sorting technique with predictable performance. 
+Your task is to use Merge Sort to arrange all processing times in ascending order. 
+After sorting, perform the following operations: 
+1. Display the sorted processing times.  
+2. Find the median processing time.  
+3. Count the number of orders whose processing time is greater than the median.  
+4. Display the difference between the fastest and slowest processing time.  
+The solution should efficiently handle large datasets and demonstrate a clear understanding of 
+Merge Sort's divide-and-conquer strategy. 
+Input 
+• First line contains integer N.  
+• Second line contains N space-separated processing times.  
+Output 
+• Sorted processing times.  
+• Median processing time.  
+• Count of orders greater than median.  
+• Difference between maximum and minimum processing time.  
+Constraints 
+• 1 ≤ N ≤ 100000  
+• 1 ≤ Time ≤ 100000  
+Example 
+Input: 
+7 
+12 25 18 30 15 22 40 
+Output: 
+12 15 18 22 25 30 40 
+Median: 22 
+Orders Above Median: 3 
+Difference: 28 
+Topic 2: Quick Sort 
+Question 1 (Easy):  
+A cloud infrastructure company manages hundreds of servers distributed across different 
+geographical locations. Every hour, each server reports its average response time in milliseconds. The 
+collected data is stored in the order it arrives and is not sorted. 
+To generate performance reports, the operations team wants the response times arranged from the 
+fastest server to the slowest server. Since the data size can become very large, an efficient in-place 
+sorting technique is required. 
+Your task is to implement Quick Sort to sort the response times in ascending order. Built-in sorting 
+methods are not allowed. 
+After sorting, the operations team will use the report to identify high-latency servers and optimize 
+system performance. 
+Input 
+• First line contains integer N.  
+• Second line contains N space-separated response times.  
+Output 
+Print the response times in ascending order. 
+Constraints 
+• 1 ≤ N ≤ 100000  
+• 1 ≤ Response Time ≤ 10000  
+Example 
+Input: 
+6 
+120 45 78 200 60 95 
+Output: 
+45 60 78 95 120 200 
+Question 2 (Medium):  
+A financial analytics company receives daily trade-value data from multiple stock exchanges. Analysts 
+use this information to identify high-value trading activity and market trends. 
+The trade values are received in random order throughout the day. Before analysis can begin, the 
+data must be sorted in descending order. 
+Your task is to implement Quick Sort to arrange the trade values from highest to lowest. 
+After sorting, perform the following operations: 
+1. Display the sorted trade values.  
+2. Find the Top 5 highest trade values.  
+3. Calculate the average of the Top 5 values.  
+4. Count how many trade values are greater than the overall average of all trade values.  
+This problem evaluates your understanding of partitioning, recursion, and real-world data analysis 
+using Quick Sort. 
+Input 
+• First line contains integer N.  
+• Second line contains N space-separated trade values.  
+Output 
+• Sorted trade values (descending).  
+• Top 5 values.  
+• Average of Top 5 values.  
+• Count of values greater than overall average.  
+Constraints 
+• 5 ≤ N ≤ 100000  
+• 1 ≤ Trade Value ≤ 10^9  
+Example 
+Input: 
+8 
+500 1200 700 2000 900 1500 3000 2500 
+Output: 
+3000 2500 2000 1500 1200 900 700 500 
+Top 5: 3000 2500 2000 1500 1200 
+Average of Top 5: 2040 
+Values Above Overall Average: 4 
+Topic 3: Heap Sort 
+Question 1 (Easy): 
+An online gaming platform is hosting a national-level tournament involving thousands of participants. 
+At the end of the tournament, player scores are collected from multiple game servers and stored in 
+random order. 
+Before announcing the final rankings, the organizers need all scores sorted in ascending order. Since 
+the leaderboard data can be very large, they have decided to use Heap Sort, which provides 
+guaranteed O(N log N) performance. 
+Your task is to implement Heap Sort and arrange all player scores in increasing order. 
+The sorted output will help tournament officials generate rankings and determine qualification 
+thresholds for future events. 
+Input 
+• First line contains integer N.  
+• Second line contains N space-separated player scores.  
+Output 
+Print the scores in ascending order. 
+Constraints 
+• 1 ≤ N ≤ 100000  
+• 0 ≤ Score ≤ 1000000  
+Example 
+Input: 
+6 
+850 1200 950 600 1500 1000 
+Output: 
+600 850 950 1000 1200 1500 
+Question 2 (Medium):  
+A multi-specialty hospital maintains records of emergency response times for all critical cases 
+handled during a month. Each response time represents the number of minutes taken by the 
+emergency team to reach and begin treatment for a patient. 
+Hospital administrators want to analyze the efficiency of their emergency services. To do so, all 
+response times must first be sorted using Heap Sort. 
+After sorting the response times in ascending order, generate the following statistics: 
+1. Display the sorted response times.  
+2. Find the fastest response time.  
+3. Find the slowest response time.  
+4. Calculate the average response time.  
+5. Count the number of cases handled faster than the average.  
+6. Calculate the percentage of cases handled faster than the average.  
+The hospital intends to use this information to improve resource allocation and reduce emergency 
+response delays. 
+Input 
+• First line contains integer N.  
+• Second line contains N space-separated response times.  
+Output 
+• Sorted response times.  
+• Fastest response time.  
+• Slowest response time.  
+• Average response time.  
+• Number of cases faster than average.  
+• Percentage of cases faster than average.  
+Constraints 
+• 1 ≤ N ≤ 100000  
+• 1 ≤ Time ≤ 500  
+Example 
+Input: 
+8 
+12 7 15 9 20 5 10 8 
+Output: 
+5 7 8 9 10 12 15 20 
+Fastest: 5 
+Slowest: 20 
+Average: 10.75 
+Cases Faster Than Average: 5 
+Percentage: 62.50%
